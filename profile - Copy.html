@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+        
+        <title>Touri</title>
+        
+        <!-- Bootstrap -->
+        <link href="css/vendors/bootstrap.min.css" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        
+        <!-- font icon -->
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+        
+        <!-- google font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        
+        <!-- lightbox img slider -->
+        <link href="css/vendors/simplelightbox.css" rel='stylesheet' type='text/css'>
+        
+        <!-- animate.css -->
+        <link rel="stylesheet" href="css/vendors/animate.min.css">
+        
+        <!-- main css -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png"></a>
+                    </div>
+                    <div class="bars">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="links-list">
+                        <ul>
+                            <li class="list-item">
+                                <a class="link active-link" href="index.html">Home</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="about.html">About</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="destinations.html">Destinations</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="tours.html">Tours</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="deals.html">Deals</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="link" href="help.html">Help</a>
+                            </li>
+<!--
+                            <li class="list-item">
+                                <a class="link red sign-in" href="#">Sign In <i class="far fa-user"></i></a>
+                            </li>
+                            <li class="list-item dropdown">
+                                <a class="link red" href="#">العربية</a>
+                            </li>
+-->
+                        </ul>
+                    </div>
+                    <div class="profile-content">
+                        <a href="#" class="profile-img">
+                            <img src="img/profile1.jpg">
+                            <span>Anas Said</span>
+                        </a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="#"><i class="fas fa-ticket-alt"></i> My Reservations</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-google-wallet"></i> Wallet</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-heart"></i> Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header -->
+        
+        <!-- main-form -->
+        <div class="main-form" id="main-form">
+            <div class="form-container">
+                <div class="main-form-btns">
+                    <button class="active" data-form="sign-in">Sign In</button>
+                    <button data-form="sign-up">Register</button>
+                </div>
+                <form id="sign-in">
+                    <div class="form-title">
+                        <h4>Please Sign In</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            Remember me 
+                            <a href="#">Lost Your Password?</a>
+                        </label>
+                    </div>
+                    <button class="main-btn">Sign In</button>
+                    <div class="form-bottom">
+                        <p>Connect with Social Networks</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                            <a href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+                        </div>
+                    </div>
+                </form>
+                <form id="sign-up">
+                    <div class="form-title">
+                        <h4>Please Sign Up</h4>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <button class="main-btn">Sign Up</button>
+                    <div class="form-bottom">
+                        <p>Connect with Social Networks</p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook-f"></i> <span>Facebook</span></a>
+                            <a href="#"><i class="fab fa-twitter"></i> <span>Twitter</span></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        
+        <!-- tours-page -->
+        <div class="profile-page">
+            <!-- main-page-bg -->
+            <div class="main-page-bg">
+                <div class="bg-content">
+                    <h1>My Profile</h1>
+                </div>
+            </div>
+            
+            <div class="page-content">
+                <div class="tours-section wow fadeIn">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="page-side profile-sidebar">
+                                        <button class="sidebar-mobile-btn">
+                                            <i class="fas fa-sliders-h"></i>
+                                        </button>
+                                        <div class="profile-img">
+                                            <img src="img/profile1.jpg">
+                                        </div>
+                                        <div class="sidebar-title">
+                                            <h5>Your Details</h5>
+                                        </div>
+                                        <ul class="sidebar-list">
+                                            <li class="active">
+                                                <a href="#">Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tours</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Favorite Tours</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Recent Tours</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Information</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Profile</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Profile</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="tours-slides">
+                                       
+<!--
+                                        <div class="tours-filter">
+                                            <div class="filter-list">
+                                                <ul>
+                                                    <li class="active">
+                                                        <a> <span class="lnr lnr-calendar-full"></span> Date</a>
+                                                    </li>
+                                                    <li>
+                                                        <a><span class="lnr lnr-exit-up"></span> Price Low to High </a>
+                                                    </li>
+                                                    <li>
+                                                        <a> <span class="lnr lnr-enter-down"></span> Price High to Low</a>
+                                                    </li>
+                                                    <li>
+                                                        <a> <span class="lnr lnr-sort-alpha-asc"></span> Name</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="display-style">
+                                                <i class="fas fa-list list"></i>
+                                                <i class="fas fa-th grid active"></i>
+                                            </div>
+                                        </div>
+-->
+                                        
+                                        <div class="row no-gutters">
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour1.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Egyptian Voyager</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias </p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="offer">
+                                                            <span class="label">Offer 50%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour2.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Classical Italy</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour3.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Classical Italy</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="offer">
+                                                            <span class="label">Offer 50%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour4.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Classical Italy</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour1.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Egyptian Voyager</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="offer">
+                                                            <span class="label">Offer 50%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour3.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Classical Italy</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="offer">
+                                                            <span class="label">Offer 50%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour4.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Classical Italy</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour1.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Egyptian Voyager</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="offer">
+                                                            <span class="label">Offer 50%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 tours-col">
+                                                <div class="slide">
+                                                    <div class="tours-card">
+                                                        <div class="card-img">
+                                                            <a href="tours-city.html"><img src="img/tour3.jpg"></a>
+                                                        </div>
+                                                        <div class="card-content">
+                                                            <div class="card-title">
+                                                                <h5><a href="tours-city.html">Classical Italy</a> </h5>
+                                                                <span class="price">$795</span>
+                                                            </div>
+                                                            <div class="reviews">
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star"></i>
+                                                                <i class="fas fa-star-half"></i>
+                                                                <span>4.5</span>
+                                                            </div>
+                                                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga consectetur dignissimos, recusandae earum alias</p>
+                                                            <hr>
+                                                            <div class="card-footer">
+                                                                <p><i class="fas fa-redo"></i> 7 Days</p>
+                                                                <p><i class="far fa-user"></i> 12+</p>
+                                                                <p><i class="far fa-heart"></i></p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="offer">
+                                                            <span class="label">Offer 50%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+              
+        
+<!--      start footer -->
+        <footer class="wow fadeIn">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-col">
+                                <div class="footer-logo">
+                                    <img src="img/logo.png">
+                                    <p>Nullam ac justo efficitur, tristique ligula. Lorem Ipsn gravida nibh vel velit auctor aliquet. Aenean sollicitudin.</p>
+                                </div>
+                                <ul class="contact-list">
+                                    <li>
+                                        <i class="lnr lnr-phone-handset"></i>
+                                        <span>000 0000 00 96+</span>
+                                    </li>
+                                    <li>
+                                        <i class="lnr lnr-map-marker"></i>
+                                        <span>Building, Street, Europe</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-col">
+                                <div class="footer-title">
+                                    <h5>Quick Links </h5>
+                                </div>
+                                <ul class="links-list">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Deals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tours</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Destinations</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-col">
+                                <div class="footer-title">
+                                    <h5>Short Links</h5>
+                                </div>
+                                <ul class="links-list">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Deals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="footer-col">
+                                <div class="footer-title">
+                                    <h5>Follow Us</h5>
+                                </div>
+                                <div class="follow">
+                                    <i class="fab fa-twitter"></i>
+                                    <p>    
+                                        @VeronicaVain @envato Hi! The themes on our support forum are not listed alphabetically, so you should just scroll… 
+                                        <a href="https://twitter.com/">https://twitter.com/</a>
+                                    </p>
+                                </div>
+                                <hr>
+                                <div class="follow">
+                                    <i class="fab fa-twitter"></i>
+                                    <p>    
+                                        @VeronicaVain @envato Hi! The themes on our support forum are not listed alphabetically, so you should just scroll… 
+                                        <a href="https://twitter.com/">https://twitter.com/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-bottom">
+                    <div class="copyrights">
+                        <p>Made With <i class="fas fa-heart"></i> By Foxy Tech</p>
+                    </div>
+                    <div class="footer-social">
+                        <ul class="social-list">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!--      end footer -->
+       
+<!--        scroll top btn -->
+        <div id="scroll-top">
+            <span class="lnr lnr-chevron-up"></span>
+            <span>TOP</span>
+        </div>
+        
+        
+<!--        jquery -->
+        <script src="js/vendors/jquery-3.3.1.min.js"></script>
+<!--        wow -->
+        <script src="js/vendors/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+              
+<!--        bootstrap library -->
+        <script src="js/vendors/proper.min.js"></script>
+        <script src="js/vendors/bootstrap.min.js"></script>
+        
+<!--        lightbox img slider -->
+        <script type="text/javascript" src="js/vendors/simple-lightbox.min.js"></script>
+        <script>
+            $(function(){
+                var $gallery = $('.gallery a').simpleLightbox();
+            });
+        </script>
+        
+<!--        Main Js -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
